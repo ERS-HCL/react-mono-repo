@@ -6,5 +6,5 @@
 		"init": "lerna bootstrap",
 		"build": "lerna run build",
 		"start": "lerna run start"
-	  }
+	}
 }
