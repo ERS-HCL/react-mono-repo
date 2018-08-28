@@ -1,10 +1,24 @@
 {
-	"devDependencies": {
-		"lerna": "^2.11.0"
-	},
-	"scripts": {
-		"init": "lerna bootstrap",
-		"build": "lerna run build",
-		"start": "lerna run start"
-	}
+  "private": true,
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "lerna": "^3.1.1",
+    "babel-plugin-styled-components": "^1.5.1",
+  },
+  "dependencies": {
+    "styled-components": "^3.4.5"
+  },
+  "scripts": {
+    "release": "lerna publish --skip-npm --skip-git",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "serve": "lerna run serve --stream"
+  },
+  "name": "react-mono-repo",
+  "version": "1.0.0",
+  "description": "React Mono Repo",
+  "main": "index.js",
+  "repository": "https://github.com/ERS-HCL/react-mono-repo.git",
+  "author": "Tarun Kumar Sukhu <tksukhu@gmail.com>",
+  "license": "MIT"
 }

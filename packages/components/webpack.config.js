@@ -4,7 +4,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: {
     ComponentOne: './src/ComponentOne.jsx',
-    ComponentTwo: './src/ComponentTwo.jsx'
+    ComponentTwo: './src/ComponentTwo.jsx',
+    Wrapper: './src/Wrapper.jsx'
   },
   output: {
     path: path.resolve(__dirname, 'lib'),

@@ -5,9 +5,9 @@
 ```
 
 ```react
-<ComponentOne />
+<ComponentOne > Hello from component one</ComponentOne>
 ```
 
 ```react
-<ComponentTwo />
+<ComponentTwo > Hello from component two</ComponentTwo>
 ```
