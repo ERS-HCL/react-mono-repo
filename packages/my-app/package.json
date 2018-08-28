@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "@tsukhu/components": "^1.0.0",
-    "babel-plugin-styled-components": "^1.5.1",
     "cross-env": "^5.1.6",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.4.5"
   },
   "scripts": {
     "serve": "cross-env PORT=4001 react-scripts start",

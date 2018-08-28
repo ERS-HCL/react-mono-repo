@@ -13,17 +13,16 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <Wrapper background={'mediumseagreen'}>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
 
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+        <Wrapper>
           <ComponentOne>
             Hello World, this is my first styled component!
           </ComponentOne>
-
-          <ComponentTwo>This is my second styled component!</ComponentTwo>
         </Wrapper>
+        <ComponentTwo>This is my second styled component!</ComponentTwo>
       </div>
     );
   }

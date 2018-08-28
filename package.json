@@ -2,12 +2,9 @@
   "private": true,
   "workspaces": ["packages/*"],
   "devDependencies": {
-    "lerna": "^3.1.1",
-    "babel-plugin-styled-components": "^1.5.1",
+    "lerna": "^3.1.1"
   },
-  "dependencies": {
-    "styled-components": "^3.4.5"
-  },
+  "dependencies": {},
   "scripts": {
     "release": "lerna publish --skip-npm --skip-git",
     "bootstrap": "lerna bootstrap",

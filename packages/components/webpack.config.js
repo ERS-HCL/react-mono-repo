@@ -3,6 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
+    vendor: ['styled-components'],
     ComponentOne: './src/ComponentOne.jsx',
     ComponentTwo: './src/ComponentTwo.jsx',
     Wrapper: './src/Wrapper.jsx'
@@ -24,5 +25,32 @@ module.exports = {
     ]
   },
   plugins: [new UglifyJsPlugin()],
-  externals: ['react']
+  externals: [
+    'react',
+    {
+      'styled-components': {
+        commonjs: 'styled-components',
+        commonjs2: 'styled-components',
+        amd: 'styled-components'
+      }
+    }
+  ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 30000,
+      minChunks: Infinity,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
+    }
+  }
 };
