@@ -26,10 +26,10 @@ npm run init
 npm run build
 ```
 
-- Run the app , the componentnent library and the styleguide in dev mode
+- Run the app , the componentnent library in dev mode
 
 ```bash
-npm run start
+npm run serve
 ```
 
 - To build and run individual components got into package/[component] and run the same commands as above
